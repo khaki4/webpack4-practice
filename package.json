@@ -1,0 +1,16 @@
+{
+  "name": "webpack4-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "pi3rrot <4dakto@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "webpack": "4.26.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  }
+}

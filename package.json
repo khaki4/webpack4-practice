@@ -5,7 +5,8 @@
   "author": "pi3rrot <4dakto@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "rm -rf ./dist && webpack",
+    "analyze": "NODE_ENV=production webpack -p --profile --json > ./node_modules/.profile.json && webpack-bundle-analyzer ./node_modules/.profile.json"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
@@ -30,6 +31,7 @@
     "webpack-dev-server": "3.1.10"
   },
   "dependencies": {
+    "lodash": "4.17.11",
     "node-sass": "^4.10.0"
   }
 }
